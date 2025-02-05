@@ -1,0 +1,25 @@
+{
+  "title": "Jake's Amazing MSPaint Comic",
+  "description": "Random comic I'm making to practice/improve my skills",
+  "artist": "JakeInALake_",
+  "author": "JakeInALake_",
+  "cover": "https://i.imgur.com/Kx6d2pS.png",
+  "chapters": {
+    "1": {
+      "title": "Chapter 1",
+      "volume": "1",
+      "groups": {
+        "<group name>": "/proxy/api/imgur/chapter/FO0u75K/"
+      },
+      "last_updated": "1616368746"
+    },
+    "2": {
+      "title": "Chapter 2",
+      "volume": "2",
+      "groups": {
+        "<group name>": "/proxy/api/imgur/chapter/dgDZCCI/"
+      },
+      "last_updated": "1616368746"
+    }
+  }
+}
