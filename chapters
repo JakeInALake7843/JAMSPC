@@ -92,6 +92,14 @@
                 "JAMSPC": "/proxy/api/imgur/chapter/G2qG7xG/"
             },
             "last_updated": "1737385140"
+        },
+        "12": {
+            "title": "Chapter 12",
+            "volume": "12",
+            "groups": {
+                "JAMSPC": "/proxy/api/imgur/chapter/iz2OTnY/"
+            },
+            "last_updated": "1741673592"
         }
     }
 }
