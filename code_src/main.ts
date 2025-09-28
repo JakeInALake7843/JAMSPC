@@ -30,32 +30,34 @@ const versions: Record<string, string[]> = {};
 		if (!thisPath) continue;
 		if (thisPath.split("/").length > maxPathDepth) continue;
 		// Get all the items inside of the current searching directory
-		// Find files by filtering if is not a folder, checking to see if extension is valid and checking to see if file is not ignored
-		// Find folders by filtering if is a folder. thats it.
+		// Find files by filtering if is a file, checking to see if extension is valid and checking to see if file is not ignored
+		// Find folders by filtering if is not a file. thats it.
 		const items = Deno.readDirSync(thisPath).toArray();
 		const files = items
-		.filter((e)=>e.isFile)
-		.filter((e)=> {
-			const len = e.name.length;
-			const ext = e.name.substring(len - 3);
+		.filter((entry: Deno.DirEntry)=>entry.isFile)
+		.map((entry: Deno.DirEntry)=>entry.name)
+		.filter((fileName: string)=> {
+			const len = fileName.length;
+			const ext = fileName.substring(len - 3);
 			return validExt.includes(ext);
 		})
-		.filter((e) => {
-			return !ignoredFiles.includes(e.name.toLowerCase())
+		.filter((fileName: string) => {
+			return !ignoredFiles.includes(fileName.toLowerCase())
 		});
 		// Folders starting with _ or . are always ignored
 		const folders = items
-		.filter((e)=>!e.isFile)
-		.filter((e)=>!(e.name.startsWith("_") || e.name.startsWith(".")))
-		.filter((e)=>!ignoredFolders.includes(e.name));
+		.filter((entry: Deno.DirEntry)=>!entry.isFile)
+		.map((entry: Deno.DirEntry)=>entry.name)
+		.filter((folderName: string)=>!(folderName.startsWith("_") || folderName.startsWith(".")))
+		.filter((folderName: string)=>!ignoredFolders.includes(folderName.toLowerCase()));
 		// If folders found, add them all into the stack with the full relative path
 		if (folders.length > 0) {
-			const mapped = folders.map((entry)=> `${thisPath}/${entry.name}`);
+			const mapped = folders.map((folderName: string)=> `${thisPath}/${folderName}`);
 			stack.push(...mapped);
 		}
 		// If files found, add them to the file list with the full relative path.
 		if (files.length > 0) {
-			const mappedFiles = files.map((entry)=> `${thisPath}/${entry.name}`);
+			const mappedFiles = files.map((fileName: string)=> `${thisPath}/${fileName}`);
 			allFiles.push(...mappedFiles);
 		}
 
@@ -65,7 +67,7 @@ const versions: Record<string, string[]> = {};
 }
 
 // "Segment sort"
-allFiles.sort((a, b) => {
+allFiles.sort((a: string, b: string) => {
 	// Path looks something like Base/Version/Chapter-1/1.png
 	// Remove spaces, replace with -
 	const pathA = a.replace(" ", "-").split("/");
@@ -100,7 +102,7 @@ allFiles.sort((a, b) => {
 });
 
 // Base/Version/Chapter/image -> Version/Chapter/image
-allFiles = allFiles.map((value)=>value.substring(BasePath.length + 1));
+allFiles = allFiles.map((value: string)=>value.substring(BasePath.length + 1));
 
 // Function from https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates
 function onlyUnique(value: string, index: number, array: string[]) {
@@ -111,16 +113,16 @@ function onlyUnique(value: string, index: number, array: string[]) {
 // Split on /, take the first element (or if null, empty string)
 // Filter out empty string, then filter out duplicates
 const versionList: string[] = allFiles
-.map((v)=>v.split("/").shift() ?? "")
+.map((v: string)=>v.split("/").shift() ?? "")
 .filter((v)=>v!="")
 .filter(onlyUnique);
 // For all versions, Add it to the versions list
-versionList.forEach((v)=>{
+versionList.forEach((v: string)=>{
 	versions[v]=[];
 });
 
 // For all files, add it to the correct version element
-allFiles.forEach((file) => {
+allFiles.forEach((file: string) => {
 	const filename = file.substring(file.indexOf("/"));
 	const folder = file.split("/").shift();
 	if (folder) {
@@ -170,7 +172,7 @@ Object.keys(versions).forEach(async (key) => {
 	const chapterKeys = Object.keys(chapterDetails.chapters);
 
 	for (const chapter of chapterKeys)  {
-		const thisChapterFiles = versionFiles.filter((file) => {
+		const thisChapterFiles = versionFiles.filter((file: string) => {
 			const chapterName = file.split("/")[1];
 			const num = parseInt(chapterName.replace(/[^0-9]+/g, ""));
 			if (Number.isNaN(num)) return false;
