@@ -10,7 +10,9 @@
             "volume": "1",
             "groups": {
                 "JAMSPC": [
-                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image.png"
+                    "link_1",
+                    "link_2",
+                    "link_3"
                 ]
             },
             "last_updated": "1759042940"
