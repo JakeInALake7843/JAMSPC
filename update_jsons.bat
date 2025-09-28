@@ -1,0 +1,1 @@
+Deno run -A "./code_src/main.ts"
