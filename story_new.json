@@ -6,15 +6,54 @@
     "cover": "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/cover.png",
     "chapters": {
         "1": {
-            "title": "Chapter 1",
+            "title": "A story retold",
+            "last_updated": "1759051301",
             "groups": {
                 "JAMSPC": [
-                    "link_1",
-                    "link_2",
-                    "link_3"
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/01.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/02.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/03.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/04.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/05.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/06.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/07.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/08.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/09.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/10.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/11.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/12.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/13.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/14.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/15.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/16.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/17.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/18.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/19.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/20.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/21.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/22.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/23.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/24.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/25.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/26.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/27.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/28.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/29.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/30.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/31.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/32.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/33.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/34.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/35.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/36.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/37.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/38.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/39.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/40.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/41.png",
+                    "https://raw.githubusercontent.com/JakeInALake7843/JAMSPC/refs/heads/main/image_src/NEW/chapter-1/42.png"
                 ]
-            },
-            "last_updated": "1759042940"
+            }
         }
     }
 }
