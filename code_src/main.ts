@@ -15,6 +15,8 @@ const versions: Record<string, string[]> = {};
 	// How deep should the checker be limited to
 	// 3 = Base/Version/Chapter/[files]
 	const maxPathDepth = 3;
+	// Folders to ignore
+	const ignoredFolders: string[] = ["repository"];
 	// Extensions to include. only image types.
 	const validExt: string[] = ["png", "jpg"];
 	// Files to ignore. canvas/blank are templates, cover is found manually later
@@ -41,7 +43,11 @@ const versions: Record<string, string[]> = {};
 		.filter((e) => {
 			return !ignoredFiles.includes(e.name.toLowerCase())
 		});
-		const folders = items.filter((e)=>!e.isFile);
+		// Folders starting with _ or . are always ignored
+		const folders = items
+		.filter((e)=>!e.isFile)
+		.filter((e)=>!(e.name.startsWith("_") || e.name.startsWith(".")))
+		.filter((e)=>!ignoredFolders.includes(e.name));
 		// If folders found, add them all into the stack with the full relative path
 		if (folders.length > 0) {
 			const mapped = folders.map((entry)=> `${thisPath}/${entry.name}`);
