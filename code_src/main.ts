@@ -114,7 +114,7 @@ function onlyUnique(value: string, index: number, array: string[]) {
 // Filter out empty string, then filter out duplicates
 const versionList: string[] = allFiles
 .map((v: string)=>v.split("/").shift() ?? "")
-.filter((v)=>v!="")
+.filter((v: string)=>v!="")
 .filter(onlyUnique);
 // For all versions, Add it to the versions list
 versionList.forEach((v: string)=>{
