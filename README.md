@@ -3,7 +3,7 @@
 This repo is the home for all of my (JakeInALake_) webcomics, whether they are good or bad.<br>
 Stories are not connected unless explicity stated.
 
-![hi](./image_src/repository/banner_1.png)
+![hi](./image_src/_repository/banner_1.png)
 
 ## Here to read?
 ### Weirdland Based
