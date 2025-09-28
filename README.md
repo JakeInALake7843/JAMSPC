@@ -12,4 +12,4 @@ Stories are not connected unless explicity stated.
 
 ## Credits
 - [JakeInALake7843](https://github.com/JakeInALake7843) // Jamspc Creator, Story Artist / Writer, Repo Setup
-- [IHaveAName2653](https://github.com/IHaveAName2653) // Scripting
+- [IHaveAName2653](https://github.com/IHaveAName2653) // Json Scripting
